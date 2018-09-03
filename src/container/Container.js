@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { GoogleApiWrapper } from "google-maps-react";
+import Map from "./Map";
 
 class Container extends Component {
   render() {
@@ -8,7 +9,7 @@ class Container extends Component {
       height: "100vh"
     };
     return (
-      <div>
+      <div className="Map" style={style}>
         <Map google={this.props.google} />
       </div>
     );
